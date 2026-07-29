@@ -1,0 +1,266 @@
+/* ============================================================
+   MY DESIGN SYSTEM - use only these values (fill in from Week 2)
+   ------------------------------------------------------------
+   background  #FFFFFF      text/ink   #000000
+   primary     #000080      accent     #FFD700
+   headings    32px / 24px  body       16px
+   spacing     8 / 16 / 24 / 32 px
+   fonts       Century Gothic (headings) / Century Gothic (body)
+   ------------------------------------------------------------
+   RULE: if a value is not in this legend, it does not go in this file.
+   ============================================================ */
+
+body {
+  background: #FFFFFF;
+  color: #000000;
+  font-family: "Century Gothic", sans-serif;
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 1100px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #FFD700;
+}
+
+.site-name {
+  color: #000080;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-link {
+  color: #000080;
+  text-decoration: none;
+  padding: 8px;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #FFD700;
+}
+
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+  padding: 32px;
+  background: rgba(0, 0, 128, 0.05);
+  border-radius: 8px;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  border: 8px solid #FFD700;
+  box-shadow: 0 8px 24px rgba(0, 0, 128, 0.25);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.hero-title {
+  margin: 0;
+  color: #000080;
+  font-size: 32px;
+}
+
+.hero-subtitle {
+  display: inline-block;
+  color: #000080;
+  background: #FFD700;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-intro,
+.hero-desc {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+
+.btn {
+  display: inline-block;
+  background: #FFD700;
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background: #000080;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 128, 0.25);
+}
+
+
+
+.content {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+
+.projects {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.section-title {
+  color: #000080;
+  font-size: 24px;
+  grid-column: 1 / -1;
+  padding-bottom: 8px;
+  border-bottom: 4px solid #FFD700;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #000080;
+  border-top: 4px solid #FFD700;
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 128, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #000080;
+  font-size: 24px;
+}
+
+.card-desc {
+  font-size: 16px;
+}
+
+.card-link {
+  color: #000080;
+  text-decoration: none;
+}
+
+
+
+.about {
+  flex: 1;
+  background: rgba(0, 0, 128, 0.05);
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.about-text {
+  font-size: 16px;
+}
+
+
+
+.site-footer {
+  margin-top: 32px;
+  background: #000080;
+  color: #FFFFFF;
+  padding: 24px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.site-footer .nav-link {
+  color: #FFD700;
+}
+
+.site-footer .nav-link:hover {
+  color: #FFFFFF;
+}
+
+
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image {
+    justify-content: flex-start;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
