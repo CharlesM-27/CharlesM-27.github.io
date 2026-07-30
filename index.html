@@ -1,184 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <!-- Charles Marrey Meneses - portfolio home page -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Portfolio - CMGM</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <header class="site-header">
+  <div class="top-band">
+    <div class="container">
 
-    <a class="site-name" href="index.html">CMGM</a>
+      <header class="site-header">
+        <a class="site-name" href="index.html">CMGM</a>
+        <nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="projects.html">Works / Projects</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="btn" href="about.html">More About Me</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <nav>
-      <ul class="nav-list">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="projects.html">Work / Projects</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li><a class="btn" href="about.html">More About Me</a></li>
-      </ul>
-    </nav>
+      <article class="hero">
+        <div class="hero-text">
+          <p class="hero-intro">Hi, I'm</p>
+          <h1 class="hero-title">Charles Marrey Meneses</h1>
+          <p class="hero-desc">
+            <strong>Network Administration Specialist.</strong>
+            I create <em>effective</em> and high-quality home server or
+            small-business server solutions for them to use efficiently
+            and grow business for the long-run.
+          </p>
+          <a class="btn" href="contact.html">Contact Me</a>
+        </div>
+        <div class="hero-image">
+          <img class="profile-img" src="images/Picture1.png" alt="Charles Marrey Meneses">
+        </div>
+      </article>
 
-  </header>
+    </div>
+  </div>
 
-  <main>
+  <main class="container">
 
-    <!-- Hero Section -->
-
-    <section class="hero">
-      <div class="hero-text">
-        <p class="hero-intro">Hi, I'm</p>
-        <h1 class="hero-title">
-          Charles Marrey Meneses
-        </h1>
-        <h2 class="hero-subtitle">
-          Network Administration Specialist
-        </h2>
-        <p class="hero-desc">
-          I build reliable server solutions for companies and
-          small businesses with a focus on quality and
-          performance.
-        </p>
-        <a class="btn" href="contact.html">Contact Me</a>
-      </div>
-
-      <div class="hero-image">
-        <img class="profile-img" src="images/Picture1.png" alt="Charles Marrey Meneses">
-      </div>
+    <section class="quick-links">
+      <article class="quick-card">
+        <h3>More About Me</h3>
+        <p>A personal overview of my background, skills, and interests.</p>
+        <a class="btn" href="about.html">View More</a>
+      </article>
+      <article class="quick-card">
+        <h3>Works / Projects</h3>
+        <p>A collection of my network administration projects I have created.</p>
+        <a class="btn" href="projects.html">View More</a>
+      </article>
+      <article class="quick-card">
+        <h3>Contact</h3>
+        <p>Get in touch with me through the contact page.</p>
+        <a class="btn" href="contact.html">View More</a>
+      </article>
     </section>
 
-    <!-- Main Content -->
-
-    <section class="content">
-
-      <!-- Projects -->
-
-      <section class="projects" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <article class="card">
-
-          <img
-            class="card-img"
-            src="images/fedora-homelab-server.png"
-            alt="Fedora Homelab Server">
-
-          <h3 class="card-title">
-            Fedora Homelab Server
-          </h3>
-
-          <p class="card-desc">
-            Built a Fedora-based homelab for server file
-            sharing and Linux network administration practice.
-          </p>
-
-          <a class="card-link" href="images/fedora-homelab-server.png" target="_blank" rel="noopener">
-            View More
-          </a>
-
-        </article>
-
-        <article class="card">
-
-          <img
-            class="card-img"
-            src="images/dns-filtering-deployment.png"
-            alt="DNS Filtering Deployment">
-
-          <h3 class="card-title">
-            DNS Filtering Deployment
-          </h3>
-
-          <p class="card-desc">
-            Attempted deployment of Pi-hole and AdGuard
-            for DNS filtering in a home network.
-          </p>
-
-          <a class="card-link" href="images/dns-filtering-deployment.png" target="_blank" rel="noopener">
-            View More
-          </a>
-
-        </article>
-
-        <article class="card">
-
-          <img
-            class="card-img"
-            src="images/local-network-monitoring.png"
-            alt="Local Network Monitoring">
-
-          <h3 class="card-title">
-            Local Network Monitoring
-          </h3>
-
-          <p class="card-desc">
-            Explored Linux networking tools to monitor
-            and troubleshoot a local area network.
-          </p>
-
-          <a class="card-link" href="images/local-network-monitoring.png" target="_blank" rel="noopener">
-            View More
-          </a>
-
-        </article>
-
-        <article class="card">
-
-          <img
-            class="card-img"
-            src="images/router-firewall-lab.png"
-            alt="Router and Firewall Lab">
-
-          <h3 class="card-title">
-            Router and Firewall Lab
-          </h3>
-
-          <p class="card-desc">
-            Configured a virtual router and firewall
-            to practice port forwarding and network
-            security rules.
-          </p>
-
-          <a class="card-link" href="images/router-firewall-lab.png" target="_blank" rel="noopener">
-            View More
-          </a>
-
-        </article>
-
-      </section>
-
-      <!-- About -->
-
-      <section class="about" id="about">
-
-        <h2 class="section-title">
-          About Me
-        </h2>
-
+    <section class="info-row">
+      <div class="info-main">
+        <h2 class="section-title">About Me</h2>
         <p class="about-text">
-          I am a passionate student interested in
-          network administration, Linux servers,
-          networking, and cybersecurity.
+          Dedicated Network Administrator focused on maintaining
+          <strong>high-availability</strong> network infrastructure,
+          enforcing strong security controls, and optimizing
+          performance across scalable enterprise environments.
         </p>
-
         <p class="about-text">
-          My goal is to build reliable, secure,
-          and efficient IT solutions while
-          continuously improving my technical
-          knowledge through hands-on projects.
+          Transforms complex IT challenges into stable, efficient,
+          and high-performing network solutions.
         </p>
-      </section>
+      </div>
+      <div class="info-side">
+        <h2 class="section-title">Quick Facts</h2>
+        <table>
+          <caption>Contact details</caption>
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Email</td>
+              <td><a href="mailto:charlesmarrey928@gmail.com">charlesmarrey928@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td><a href="tel:+639908799909">+63 990 879 9909</a></td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Philippines</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
   </main>
-  <footer class="site-footer" id="contact">
 
-    <p> Email: <a class="nav-link" href="mailto:charlesmarrey928@gmail.com"> charlesmarrey928@gmail.com</a>
-    </p>
+  <footer>
+    <p>Email: <a href="mailto:charlesmarrey928@gmail.com">charlesmarrey928@gmail.com</a></p>
+    <p>Phone: <a href="tel:+639908799909">+63 990 879 9909</a></p>
   </footer>
-</body>
 
+</body>
 </html>

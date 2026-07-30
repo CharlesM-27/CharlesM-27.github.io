@@ -1,133 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <!-- Projects page -->
   <meta charset="utf-8">
-  <title>Work / Projects - CMGM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Works / Projects - CMGM</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <header class="site-header">
+  <div class="top-band">
+    <div class="container">
+      <header class="site-header">
+        <a class="site-name" href="index.html">CMGM</a>
+        <nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="projects.html">Works / Projects</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="btn" href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
 
-    <a class="site-name" href="index.html">CMGM</a>
+  <main class="container">
+    <h2 class="section-title">Projects</h2>
 
-    <nav>
-      <ul class="nav-list">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="projects.html">Work / Projects</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li><a class="btn" href="contact.html">Contact Me</a></li>
-      </ul>
-    </nav>
+    <div class="projects-list">
 
-  </header>
-
-  <main>
-
-    <!-- Projects -->
-
-    <section class="projects">
-      <h2 class="section-title">Projects</h2>
-      <article class="card">
-
-        <img
-          class="card-img"
-          src="images/fedora-homelab-server.png"
-          alt="Fedora Homelab Server">
-
-        <h3 class="card-title">
-          Fedora Homelab Server
-        </h3>
-
-        <p class="card-desc">
-          Built a Fedora-based homelab for server file
+      <article class="project">
+        <img src="images/fedora-homelab-server.png" alt="Cockpit dashboard for a Fedora Linux homelab server">
+        <h3>Fedora Homelab Server</h3>
+        <p>
+          Built a <strong>Fedora</strong>-based homelab for server file
           sharing and Linux network administration practice.
         </p>
-
-        <a class="card-link" href="images/fedora-homelab-server.png" target="_blank" rel="noopener">
-          View More
-        </a>
-
+        <p><a href="images/fedora-homelab-server.png" target="_blank" rel="noopener">View More</a></p>
       </article>
 
-      <article class="card">
-
-        <img
-          class="card-img"
-          src="images/dns-filtering-deployment.png"
-          alt="DNS Filtering Deployment">
-
-        <h3 class="card-title">
-          DNS Filtering Deployment
-        </h3>
-
-        <p class="card-desc">
-          Attempted deployment of Pi-hole and AdGuard
-          for DNS filtering in a home network.
+      <article class="project">
+        <img src="images/dns-filtering-deployment.png" alt="Terminal showing AdGuard Home service status">
+        <h3>DNS Filtering Deployment</h3>
+        <p>
+          Attempted deployment of <strong>Pi-hole</strong> and
+          <strong>AdGuard</strong> for DNS filtering in a home network.
         </p>
-
-        <a class="card-link" href="images/dns-filtering-deployment.png" target="_blank" rel="noopener">
-          View More
-        </a>
-
+        <p><a href="images/dns-filtering-deployment.png" target="_blank" rel="noopener">View More</a></p>
       </article>
 
-      <article class="card">
-
-        <img
-          class="card-img"
-          src="images/local-network-monitoring.png"
-          alt="Local Network Monitoring">
-
-        <h3 class="card-title">
-          Local Network Monitoring
-        </h3>
-
-        <p class="card-desc">
-          Explored Linux networking tools to monitor
-          and troubleshoot a local area network.
+      <article class="project">
+        <img src="images/local-network-monitoring.png" alt="Terminal output of ip addr and ip route commands">
+        <h3>Local Network Monitoring</h3>
+        <p>
+          Explored Linux networking tools to monitor and
+          troubleshoot a <em>local area network</em>.
         </p>
-
-        <a class="card-link" href="images/local-network-monitoring.png" target="_blank" rel="noopener">
-          View More
-        </a>
-
+        <p><a href="images/local-network-monitoring.png" target="_blank" rel="noopener">View More</a></p>
       </article>
 
-      <article class="card">
-
-        <img
-          class="card-img"
-          src="images/router-firewall-lab.png"
-          alt="Router and Firewall Lab">
-
-        <h3 class="card-title">
-          Router and Firewall Lab
-        </h3>
-
-        <p class="card-desc">
-          Configured a virtual router and firewall
-          to practice port forwarding and network
-          security rules.
+      <article class="project">
+        <img src="images/router-firewall-lab.png" alt="Terminal showing firewalld active status">
+        <h3>Router and Firewall Lab</h3>
+        <p>
+          Configured a virtual router and firewall to practice port
+          forwarding and network <strong>security</strong> rules.
         </p>
-
-        <a class="card-link" href="images/router-firewall-lab.png" target="_blank" rel="noopener">
-          View More
-        </a>
-
+        <p><a href="images/router-firewall-lab.png" target="_blank" rel="noopener">View More</a></p>
       </article>
 
-    </section>
-
+    </div>
   </main>
-  <footer class="site-footer">
 
-    <p> Email: <a class="nav-link" href="mailto:charlesmarrey928@gmail.com"> charlesmarrey928@gmail.com</a>
-    </p>
+  <footer>
+    <p>Email: <a href="mailto:charlesmarrey928@gmail.com">charlesmarrey928@gmail.com</a></p>
+    <p>Phone: <a href="tel:+639908799909">+63 990 879 9909</a></p>
   </footer>
-</body>
 
+</body>
 </html>

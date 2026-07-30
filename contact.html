@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <!-- Contact page -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - CMGM</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <header class="site-header">
+  <div class="top-band">
+    <div class="container">
+      <header class="site-header">
+        <a class="site-name" href="index.html">CMGM</a>
+        <nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="projects.html">Works / Projects</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="btn" href="mailto:charlesmarrey928@gmail.com">Email Me</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
 
-    <a class="site-name" href="index.html">CMGM</a>
+  <main class="container">
+    <section class="info-row">
+      <div class="info-main">
+        <h2 class="section-title">Contact</h2>
+        <p class="about-text">
+          Interested in working together or have a question about one
+          of my projects? Reach out any time.
+        </p>
 
-    <nav>
-      <ul class="nav-list">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="projects.html">Work / Projects</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li><a class="btn" href="mailto:charlesmarrey928@gmail.com">Email Me</a></li>
-      </ul>
-    </nav>
+        <form action="#" method="post">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
 
-  </header>
-
-  <main>
-
-    <!-- Contact -->
-
-    <section class="about">
-
-      <h2 class="section-title">
-        Contact
-      </h2>
-
-      <p class="about-text">
-        Interested in working together or have a question
-        about one of my projects? Reach out any time.
-      </p>
-
-      <p class="about-text">
-        Email: <a class="nav-link" href="mailto:charlesmarrey928@gmail.com">charlesmarrey928@gmail.com</a>
-      </p>
-
+      <div class="info-side">
+        <h2 class="section-title">Quick Facts</h2>
+        <table>
+          <caption>Contact details</caption>
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Email</td>
+              <td><a href="mailto:charlesmarrey928@gmail.com">charlesmarrey928@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td><a href="tel:+639908799909">+63 990 879 9909</a></td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Philippines</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
-
   </main>
-  <footer class="site-footer">
 
-    <p> Email: <a class="nav-link" href="mailto:charlesmarrey928@gmail.com"> charlesmarrey928@gmail.com</a>
-    </p>
+  <footer>
+    <p>Email: <a href="mailto:charlesmarrey928@gmail.com">charlesmarrey928@gmail.com</a></p>
+    <p>Phone: <a href="tel:+639908799909">+63 990 879 9909</a></p>
   </footer>
-</body>
 
+</body>
 </html>
