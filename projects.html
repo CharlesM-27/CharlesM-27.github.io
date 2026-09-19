@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Works / Projects - CMGM</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -72,6 +73,32 @@
       </article>
 
     </div>
+
+    <section id="explorer" class="explorer">
+      <h2 class="section-title">Explore My Projects</h2>
+      <p class="about-text">
+        Search or filter the list below. It is built from a small
+        JavaScript array, not typed into this page by hand.
+      </p>
+
+      <div class="filter-controls">
+        <div>
+          <label for="project-search">Search by title</label>
+          <input type="search" id="project-search" placeholder="Type to filter, e.g. &quot;dns&quot;">
+        </div>
+        <div>
+          <label for="tag-filter">Filter by category</label>
+          <select id="tag-filter">
+            <option value="All">All</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="project-count"></p>
+
+      <!-- JavaScript fills this. It is empty on purpose. -->
+      <ul id="project-gallery" class="projects-list js-projects-list"></ul>
+    </section>
   </main>
 
   <footer>

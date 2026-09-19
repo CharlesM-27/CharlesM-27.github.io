@@ -34,9 +34,7 @@ textarea:focus {
   padding: 0 24px;
 }
 
-
-
-/* ---- header & hero ---- */
+/* ---- headerr and heroo ---- */
 
 .top-band {
   background: linear-gradient(135deg, #000080, #000040);
@@ -153,8 +151,6 @@ textarea:focus {
   box-shadow: 0 4px 10px rgba(0, 0, 128, 0.3);
 }
 
-
-
 /* ---- CArds ---- */
 
 .quick-links {
@@ -189,9 +185,7 @@ textarea:focus {
   font-size: 16px;
 }
 
-
-
-/* ---- About & Contact  ---- */
+/* ---- about and contact  ---- */
 
 .info-row {
   display: flex;
@@ -222,9 +216,7 @@ textarea:focus {
   margin: 0 0 16px 0;
 }
 
-
-
-/* ---- Contactz ---- */
+/* ---- contactz ---- */
 
 form {
   display: flex;
@@ -251,9 +243,7 @@ textarea {
   font-size: 16px;
 }
 
-
-
-/* ---- Table ---- */
+/* ---- thetable ---- */
 
 table {
   width: 100%;
@@ -284,9 +274,7 @@ tbody tr:nth-child(even) {
   background: rgba(0, 0, 128, 0.05);
 }
 
-
-
-/* ---- projects ---- */
+/* ---- the projects ---- */
 
 .projects-list {
   display: flex;
@@ -327,7 +315,59 @@ tbody tr:nth-child(even) {
 
 
 
-/* ---- Footer ---- */
+/* ---- P.E interactive ---- */
+
+.explorer {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(0, 0, 128, 0.15);
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 16px 0;
+  max-width: 600px;
+}
+
+.filter-controls > div {
+  flex: 1 1 220px;
+}
+
+.filter-controls label {
+  margin-bottom: 4px;
+}
+
+.filter-controls input,
+.filter-controls select {
+  width: 100%;
+}
+
+#project-count {
+  font-weight: bold;
+  color: #000080;
+  margin: 8px 0 16px 0;
+}
+
+.js-projects-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.js-projects-list .project h3 {
+  margin-top: 0;
+}
+
+.tag-line {
+  font-size: 14px;
+  color: #000080;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ---- foot ---- */
 
 footer {
   background: #000080;
