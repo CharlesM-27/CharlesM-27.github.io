@@ -1,6 +1,5 @@
 'use strict';
 
-// The array is the truth. The page is a picture of it.
 const projects = [
   {
     title: 'Fedora Homelab Server',
@@ -32,12 +31,11 @@ const projects = [
   }
 ];
 
-// Works something out. Takes data in, hands a new list back.
-// Never touches the page.
+// this takes data in
 function filterProjects(list, query, tag) {
   const cleanQuery = query.trim().toLowerCase();
 
-  // Guard clause: empty query means "don't filter by title at all".
+  // empty search
   return list.filter(function (project) {
     const matchesQuery = cleanQuery === '' || project.title.toLowerCase().includes(cleanQuery);
     const matchesTag = tag === 'All' || project.tags.includes(tag);
@@ -45,7 +43,7 @@ function filterProjects(list, query, tag) {
   });
 }
 
-// Draws. The only function in this file that writes to the page.
+// Draws the pagr
 function renderProjects(list) {
   const container = document.querySelector('#project-gallery');
   const countLabel = document.querySelector('#project-count');
@@ -60,7 +58,7 @@ function renderProjects(list) {
     return;
   }
 
-  // Build the string first, write it once, after the loop.
+  // lets buuild the string first
   let html = '';
   for (const project of list) {
     html += `
@@ -77,8 +75,7 @@ function renderProjects(list) {
   countLabel.textContent = `Showing ${list.length} of ${projects.length} projects.`;
 }
 
-// Builds the category dropdown from whatever tags actually exist,
-// instead of hand-typing options that could drift out of sync.
+// Builds the category dropdown 
 function populateTagFilter() {
   const select = document.querySelector('#tag-filter');
   if (!select) {
@@ -102,7 +99,7 @@ function populateTagFilter() {
   }
 }
 
-// Re-derives the list, then redraws it. Never edits the page directly.
+// re-derives the list then redraws it
 function handleFilterChange() {
   const searchInput = document.querySelector('#project-search');
   const tagSelect = document.querySelector('#tag-filter');
